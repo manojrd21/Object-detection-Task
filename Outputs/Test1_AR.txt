@@ -1,0 +1,13 @@
+=== Analytics Report ===
+Total frames processed: 152
+Complete list of object classes detected: ['bus', 'traffic light', 'car', 'person', 'truck', 'tv']
+Count of each unique object type detected:
+  bus: 1
+  traffic light: 7
+  car: 26
+  person: 1
+  truck: 3
+  tv: 1
+Average processing time per frame: 0.2499 seconds
+Minimum confidence score observed: 0.4002
+Maximum confidence score observed: 0.9716
