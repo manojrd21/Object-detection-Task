@@ -117,7 +117,7 @@ def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_t
     - Output video saved with bounding boxes annotated
     - Analytics report saved as a text file
     """
-    output_dir = "D:\\Object detection Task\\Outputs"  # Path where detected output will be stored
+    output_dir = "D:\Object-detection-Task\Outputs"  # Path where detected output will be stored
     output_video_path = os.path.join(output_dir, "output_tracked.mp4")
     analytics_report_path = os.path.join(output_dir, "analytics_report.txt")
 
@@ -243,9 +243,9 @@ def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_t
 # Main function for CLI argument parsing and execution
 def main():
     parser = argparse.ArgumentParser(description="Real-Time Object Detection and Tracking")
-    parser.add_argument("--video_path", type=str, default="D:\\Object detection Task\\Testing_Videos\\Test5.mp4",  ## Path for input video
+    parser.add_argument("--video_path", type=str, default="D:\Object-detection-Task\Testing_Videos\Test5.mp4",  ## Path for input video
                         help="Path to input video file")
-    parser.add_argument("--weights_path", type=str, default=r"D:\Object detection Task\best.pt",  # Path for model weight(best.pt)
+    parser.add_argument("--weights_path", type=str, default=r"D:\Object-detection-Task\best.pt",  # Path for model weight(best.pt)
                         help="Path to YOLOv8 model weights")
     parser.add_argument("--conf_threshold", type=float, default=0.4,
                         help="Confidence threshold for detections")

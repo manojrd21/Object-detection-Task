@@ -40,13 +40,13 @@ pip install -r requirements.txt
 1. Update the following paths in the `task_testing.py` before running:
 
 - **Input video file path**  
-  Example: `D:\Object detection Task\Testing_Videos\Test5.mp4`
+  Example: `D:\Object-detection-Task\Testing_Videos\Test5.mp4`
 
 - **Model weights path (best.pt)**  
-  Example: `D:\Object detection Task\best.pt`
+  Example: `D:\Object-detection-Task\best.pt`
 
 - **Output directory path for saving results**  
-  Example: `D:\Object detection Task\Outputs`
+  Example: `D:\Object-detection-Task\Outputs`
 
 2. Activate the virtual environment:
 ```bash
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 3. Run the detection and tracking script:
 ```bash
-python task_testing.py --video_path "D:\Object detection Task\Testing_Videos\Test5.mp4" --weights_path "D:\Object detection Task\best.pt" --conf_threshold 0.4
+python task_testing.py --video_path "D:\Object-detection-Task\Testing_Videos\Test5.mp4" --weights_path "D:\Object-detection-Task\best.pt" --conf_threshold 0.4
 ```
 
 4. After processing, output video and analytics report will be available in the specified output directory.
