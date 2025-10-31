@@ -1,0 +1,10 @@
+=== Analytics Report ===
+Total frames processed: 302
+Complete list of object classes detected: ['person', 'sports ball', 'potted plant']
+Count of each unique object type detected:
+  person: 4
+  sports ball: 1
+  potted plant: 2
+Average processing time per frame: 0.1169 seconds
+Minimum confidence score observed: 0.4016
+Maximum confidence score observed: 0.9429
