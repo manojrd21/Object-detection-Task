@@ -5,6 +5,9 @@ This project implements a real-time object detection and tracking system using a
 
 ---
 
+## Require Files
+- **Drive Link:** [Google Drive]([https://drive.google.com/your-drive-link](https://drive.google.com/drive/folders/1YikmrXb6c9Bo78XYptdpm7KqVny8muZs?usp=drive_link))
+
 ## Installation Instructions
 
 1. Clone the repository to your local machine.
@@ -58,7 +61,7 @@ pip install -r requirements.txt
 python task_testing.py --video_path "D:\Object-detection-Task\Testing_Videos\Test5.mp4" --weights_path "D:\Object-detection-Task\best.pt" --conf_threshold 0.4
 ```
 
-4. After processing, output video and analytics report will be available in the specified output directory.
+4. After processing, the output video and analytics report will be available in the specified output directory.
 
 ---
 
@@ -66,7 +69,7 @@ python task_testing.py --video_path "D:\Object-detection-Task\Testing_Videos\Tes
 
 ### Inputs
 
-- Video file path (`.mp4`, `.avi`, etc.) or webcam device ID (default 0), passed via command-line argument
+- Video file path (`.mp4`, `.avi`, etc.), passed via command-line argument
 
 - Model weights path (`best.pt` pre-trained YOLOv8 weights)
 
@@ -76,14 +79,13 @@ python task_testing.py --video_path "D:\Object-detection-Task\Testing_Videos\Tes
 
 - The processed video file (output_tracked.mp4) displays bounding boxes with detected classes for each frame, displayed and saved in the output folder.
 
-- The analytics report (text file) summarizing:
+- The analytics report (text file) summarizes:
     - Total number of frames processed
     - Detected object classes and their counts
     - Average processing time per frame
     - Confidence score statistics (min and max)
 
 - Both files are saved in the output folder specified in the code (D:\Object detection Task\Outputs or your relevant path).
-
 
 ---
 
@@ -107,9 +109,9 @@ torchvision>=0.18.0
 
 - Do not modify or retrain the model; use the pre-trained weights provided.
 
-- The system is designed to run offline once the environment is setup.
+- The system is designed to run offline once the environment is set up.
 
-- Test with multiple video formats and webcam where applicable.
+- Test with multiple video formats.
 
 - If you encounter issues, check your environment activation and dependency versions.
 
