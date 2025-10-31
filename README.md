@@ -6,7 +6,7 @@ This project implements a real-time object detection and tracking system using a
 ---
 
 ## Require Files
-- **Drive Link:** [Google Drive]([https://drive.google.com/your-drive-link](https://drive.google.com/drive/folders/1YikmrXb6c9Bo78XYptdpm7KqVny8muZs?usp=drive_link))
+- **Drive Link:** [Google Drive](https://drive.google.com/drive/folders/1YikmrXb6c9Bo78XYptdpm7KqVny8muZs?usp=drive_link)
 
 ## Installation Instructions
 
