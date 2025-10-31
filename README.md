@@ -74,7 +74,7 @@ python task_testing.py --video_path "D:\Object-detection-Task\Testing_Videos\Tes
 
 ### Outputs
 
-- The processed video file (output_tracked.mp4) displays bounding boxes with detected classes for each frame, saved in the output folder.
+- The processed video file (output_tracked.mp4) displays bounding boxes with detected classes for each frame, displayed and saved in the output folder.
 
 - The analytics report (text file) summarizing:
     - Total number of frames processed

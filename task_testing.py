@@ -1,4 +1,3 @@
-# Importing required libraries
 import os
 import cv2
 import argparse
@@ -107,17 +106,17 @@ def save_analytics_report(report_path, total_frames, class_counts, avg_time_per_
 def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_threshold=0.4):
     """
     Processes an input video for object detection and tracking, saves output video and analytics.
-    
+
     Arguments:
     - video_path: path to input video file
     - weights_path: path to YOLOv8 weights file
     - conf_threshold: minimum confidence threshold for detections
-    
+
     Outputs:
     - Output video saved with bounding boxes annotated
     - Analytics report saved as a text file
     """
-    output_dir = "D:\Object-detection-Task\Outputs"  # Path where detected output will be stored
+    output_dir = "D:\\Object-detection-Task\\Outputs"  # Path where detected output will be stored
     output_video_path = os.path.join(output_dir, "output_tracked.mp4")
     analytics_report_path = os.path.join(output_dir, "analytics_report.txt")
 
@@ -189,7 +188,6 @@ def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_t
                 if iou > 0.5:
                     track_class = classes_for_tracker[i]
                     break
-            # Record the class per unique track ID once
             if track_id not in track_id_to_class:
                 track_id_to_class[track_id] = track_class
 
@@ -217,6 +215,7 @@ def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_t
 
     # Print output video path
     print(f"Output video saved at: {output_video_path}")
+    print(f"Analytical Report saved at: {analytics_report_path}")
 
     # Print analytics summary report
     print("\n=== Analytics Report ===")
@@ -239,13 +238,19 @@ def run_object_detection_and_tracking(video_path, weights_path='best.pt', conf_t
                           min_conf if confidence_scores else None,
                           max_conf if confidence_scores else None)
 
+    # Open the output video automatically in local system
+    try:
+        os.startfile(output_video_path)
+    except Exception as e:
+        print("Could not open video automatically:", e)
+
 
 # Main function for CLI argument parsing and execution
 def main():
     parser = argparse.ArgumentParser(description="Real-Time Object Detection and Tracking")
-    parser.add_argument("--video_path", type=str, default="D:\Object-detection-Task\Testing_Videos\Test5.mp4",  ## Path for input video
+    parser.add_argument("--video_path", type=str, default="D:\\Object-detection-Task\\Testing_Videos\\Test4.mp4",
                         help="Path to input video file")
-    parser.add_argument("--weights_path", type=str, default=r"D:\Object-detection-Task\best.pt",  # Path for model weight(best.pt)
+    parser.add_argument("--weights_path", type=str, default=r"D:\\Object-detection-Task\\best.pt",
                         help="Path to YOLOv8 model weights")
     parser.add_argument("--conf_threshold", type=float, default=0.4,
                         help="Confidence threshold for detections")
